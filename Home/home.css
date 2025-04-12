@@ -1520,14 +1520,14 @@ html, body {
 .blog-content-heading {
     font-family: serif;
     font-weight: 600;
-    font-size: clamp(0px, 3vw, 30px);
+    font-size: clamp(16px, 3vw, 30px);
     color: #2d2d2d;
     /* color: rgb(33, 33, 33); */
     margin-bottom: 2vw;
 }
 
 .blog-content-heading-txt {
-    font-size: clamp(0px, 2vw, 22px);
+    font-size: clamp(12px, 2vw, 22px);
     color: rgb(90, 90, 90);
     margin-bottom: 2vw;
 }
@@ -1535,7 +1535,7 @@ html, body {
 .blog-content-intro {
     font-family: sans-serif;
     font-weight: 500;
-    font-size: clamp(0px, 2.5vw, 30px);
+    font-size: clamp(16px, 2.5vw, 30px);
     margin-bottom: 1vw;
 }
 
@@ -1543,13 +1543,13 @@ html, body {
     font-family: sans-serif;
     color: #04aa3c;
     font-weight: 500;
-    font-size: clamp(0px, 2.5vw, 30px);
+    font-size: clamp(16px, 2.5vw, 30px);
     margin-bottom: 2vw;
 }
 
 .blog-content-intro-txt {
     color: rgb(90, 90, 90);
-    font-size: clamp(0px, 1.8vw, 20px);
+    font-size: clamp(10px, 1.8vw, 20px);
     line-height: 3vw;
     margin-bottom: 2vw;
 }
@@ -1557,20 +1557,20 @@ html, body {
 .blog-content-point {
     font-family: sans-serif;
     font-weight: 500;
-    font-size: clamp(0px, 2.2vw, 30px);
+    font-size: clamp(16px, 2.2vw, 30px);
     margin-bottom: 1vw;
 }
 
 .blog-content-point-txt {
     color: rgb(90, 90, 90);
-    font-size: clamp(0px, 1.8vw, 20px);
+    font-size: clamp(10px, 1.8vw, 20px);
     line-height: 3vw;
     margin-bottom: 2vw;
 }
 
 .blog-content-point-subtxt {
     color: rgb(90, 90, 90);
-    font-size: clamp(0px, 1.8vw, 20px);
+    font-size: clamp(10px, 1.8vw, 20px);
     line-height: 3vw;
     margin-bottom: 2vw;
     padding-left: 3vw;
@@ -1583,7 +1583,7 @@ html, body {
 
 .blog-content-point-contuctus {
     color: rgb(90, 90, 90);
-    font-size: clamp(0px, 1.8vw, 20px);
+    font-size: clamp(10px, 1.8vw, 20px);
     line-height: 3vw;
     margin-bottom: 2vw;
     padding-left: 2vw;
@@ -1618,7 +1618,7 @@ html, body {
 
 .rmrl-btn::before {
     content: "Read More";
-    width: 2vw;
+    width: 40px;
     border-radius: 5px;
     color: #ffffff;
     background: linear-gradient(90deg, #18cc9c 30%, #1f98d8 100%);
@@ -1653,6 +1653,85 @@ html, body {
     mask-image: none;
     transition: 0.5s;
 }
+
+
+/* ******************************************* NEW Blog page MOBILE ************************************* */
+
+@media only screen and (max-width: 634px) {
+    .blog-heading-block {
+      height: 150px;
+      width: 100vw;
+      border-radius: 12px;
+      background-position: center;
+    }
+  
+    .blog-top-heading {
+      font-size: 32px;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .blog-content-heading-block {
+      flex-direction: column;
+      align-items: center;
+      margin: 5vw 0;
+    }
+  
+    .blog-content-heading1,
+    .blog-content-heading2 {
+      font-size: 32px;
+      text-align: center;
+    }
+  
+    .blog-content-hoder-block {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
+    }
+  
+    .blog-content-blogs {
+      width: 90%;
+      padding-left: 0;
+    }
+ 
+    .blog-pic1-img,
+    .blog-pic2-img {
+      width: 100%;
+      aspect-ratio: 1.6 / 1;
+      margin-bottom: 4vw;
+    }
+ 
+    .blog-content-date-comment {
+      font-size: 4vw;
+      margin-bottom: 4vw;
+    }
+
+    .blog-content-heading {
+      font-size: 24px;
+      margin-bottom: 3vw;
+    }
+  
+    .blog-content-heading-txt,
+    .blog-content-intro,
+    .blog-content-intro2,
+    .blog-content-point,
+    .blog-content-point-txt,
+    .blog-content-point-subtxt,
+    .blog-content-point-contuctus {
+      font-size: 16px;
+      line-height: 5vw;
+      margin-bottom: 3vw;
+      padding-left: 2vw;
+    }
+
+    
+
+
+}
+  
+
+
+
 /* **************************************REVIEW********************************************************** */
 
 
